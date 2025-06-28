@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Italianno&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+/* Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Italianno&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Yuji+Mai&display=swap');
+/* Yuji Mai */
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap');
+/*  font-family: "Edu AU VIC WA NT Arrows", serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jacquard+24&display=swap');
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html,body{
+height: 100%;
+width: 100%;
+}
+
+body{
+    background-color: gray;
+    color: #fff;
+}
+
+nav{
+    background:linear-gradient(rgba(137, 253, 253, 0.658), transparent, pink);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99999;
+    padding: 0.5vw 5vw;
+    width: 100%;
+}
+
+nav h2{
+    color: #fff;
+    font-size: 2.5vw;
+    font-family: "Edu AU VIC WA NT Arrows", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 2.5vw;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    padding: 0.5vw 1vw;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.047);
+    font-family: "Playfair Display";
+    border-bottom: 1px dashed #fff;
+    font-style: italic;
+}
+
+nav ul li i{
+    margin: 0.2vw;
+    font-style: italic;
+}
+
+#main{
+    width: 100%;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://wallpapercave.com/wp/wp11883218.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.container .text_content h1{
+    font-size: 4vw;
+    font-weight: 500;
+    /* color: #DBD2C3; */
+    color: transparent;
+    text-align: center;
+    font-family: "Yuji Mai";
+    font-style: italic;
+    -webkit-text-stroke: 2px lightblue;
+    position: absolute;
+    bottom: 35%;
+    left: 12%;
+    mix-blend-mode: difference;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom-left-radius: 1vw;
+}
+
+.container .text_content h2{
+    font-size: 2.5vw;
+    color: #fff;
+    font-weight: 500;
+    font-style: italic;
+    position: absolute;
+    bottom: 26%;
+    left: 20%;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom-left-radius: 1vw;
+    background: linear-gradient(transparent, black);
+    padding: 0.5vw;
+}
+
+.container .text_content p{
+    font-size: 1.5vw;
+    font-style: italic;
+    position: absolute;
+    bottom: 11.5%;
+    left: 28%;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    background: linear-gradient(transparent, black);
+    border-bottom-left-radius: 1vw;
+    padding: 0.5vw;
+}
+
+.container-2{
+    height: 120vh;
+    width: 100%;
+    background-color: rgba(20, 20, 199, 0.573);
+    border-top: 2px dashed black;
+}
+
+.container-2 .container-upper .first-upper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+}
+
+.container-2 .container-upper .first-upper h1{
+    font-size: 3vw;
+    margin: 1vw;
+    font-family: "Edu AU VIC WA NT Arrows", serif;
+}
+
+
+.container-2 .container-upper .first-upper i{
+    font-size: 3.5vw;
+    rotate: 0deg;
+    animation-name: iconrotation;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes iconrotation {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+.container-2 h2{
+    font-size: 2.5vw;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 0.5vw;
+}
+
+.container-2 P{
+    font-size: 1.5vw;
+    margin: 2vw 15vw;
+    text-align: center;
+}
+
+.container-2 .middle-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-2 h4{
+    padding: 1vw;
+    border-radius: 0.8vw;
+    font-size: 2.5vw;
+    width: fit-content;
+    text-transform: capitalize;
+    background-color: brown;
+    font-family: "Dancing Script";
+}
+
+.container-2 h6{
+    font-size: 1vw;
+    margin: 2vw;
+    text-align: center;
+}
+
+.image-container{
+    height: 100vh;
+    width: 70%;
+    display: flex;
+    margin-left: 15vw;
+    margin-bottom: 10vh;
+    padding: 1vw;
+    overflow: hidden;
+}
+
+.image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container-3{
+    margin-top: 55vh;
+    height: 50vh;
+    width: 100%;
+}
+
+.container-3 h2{
+    margin-bottom: 10vh;
+    font-size: 2vw;
+    text-align: center;
+    color: #000;
+}
+
+.container-3 p{
+    font-size: 1.2vw ;
+    text-align: center;
+    margin: 2vw 10vw;
+    color: #000;
+}
+
+.container-3 .middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-3 h4{
+    font-size: 1.5vw;
+    padding: 1vw;
+    width: fit-content;
+    text-transform: capitalize;
+    background-color: #7878DF;
+    border-radius: 1vw;
+    font-weight: 500;
+}
+
+.container-4{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container4-image{
+    height: 100vh;
+    width: 80%;
+    position: relative;
+}
+
+.container4-image .image-keander-image{
+    position: absolute;
+    height: 82vh;
+    width: 77.5%;
+    top: 6.1%;
+    left: 11.40%;
+    background-color: #fff;
+}
+
+.container4-image .image-keander-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.container4-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container-5{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container5-videocontainer{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: screen;
+}
+
+.container5-videocontainer video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container-5 .container5-text h3{
+    font-size: 2vw;
+    font-family: "Dancing Script";
+    font-weight: 500;
+    color: #000;
+    font-style: italic;
+    text-align: center;
+}
+
+.container-5 .container5-text P{
+    font-size: 1.2vw;
+    margin: 2vw 20vw;
+    text-align: center;
+    color: #000;
+}
+
+.container-6{
+    min-height: 70vh;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    padding: 1vw 5vw;
+}
+
+.container6-left{
+    height: 60vh;
+    width: 50%;
+}
+
+.container6-left img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+
+.container6-right{
+    height: 60vh;
+    width: 70%;
+    /* background-color: #000; */
+}
+
+.container6-right h3{
+    margin: 5vw 0vw 2vw 1vw;
+    font-size: 1.8vw;
+}
+
+.container6-right p{
+    margin: 2vw 1vw;
+    font-size: 1.2vw;
+    width: 70%;
+}
+
+.container6-right h4{
+    margin: 2vw 1vw;
+    font-size: 1.5vw;
+    width: 70%;
+}
+
+.underline{
+    margin: 2vw 1vw;
+    height: 2px;
+    width: 95%;
+    background-color: gray;
+}
+
+.container6-right h2{
+    margin: 2vw 1vw;
+    font-size: 1.5vw;
+    width: 70%;
+}
+
+footer{
+    min-height: 30vh;
+    width: 100%;
+    background-color: rgba(20, 20, 199, 0.573);
+}
+
+#footer-container .footer-text{
+    height: 30vh;
+}
+
+#footer-container{
+    padding: 2vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer-container h1{
+    margin: 1.5vw 0;
+    padding: 0.5vw;
+    border-bottom: 1px solid #fff;
+}
+#footer-container h3{
+    font-size: 1.2vw;
+    margin: 0vw 1vw;
+}
+
+.copyright{
+    height: 8vh;
+    text-align: center;
+    padding: 1vw;
+    margin-bottom: 8vh;
+    background-color: rgb(20, 20, 199);
+}
